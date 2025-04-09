@@ -1,0 +1,6 @@
+1. Interface/Type for Typescript type definitions
+2. Model and Mongoose Schema
+3. ZOD validation Schema
+4. routes
+5. controllers
+6. services

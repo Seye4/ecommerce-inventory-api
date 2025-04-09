@@ -1,0 +1,91 @@
+# GET http://localhost:3000/api/products?searchTerm=brush
+
+# GET http://localhost:3000/api/products/67f4f35577a2c966d939012f
+
+
+# POST http://localhost:3000/api/products HTTP/1.1
+# content-type: application/json
+
+# {     
+#     "name": "Fortune ToothBrush" ,
+#     "description": "Electronic Toothbrush",
+#     "price": 4.99,
+#     "category": "House Hold Items",
+#     "tags": [
+#         "cleaning", "hygiene", "dental"
+#     ],
+#     "variants": [
+#         {
+#             "type": "color",
+#             "value": "Yellow"
+#         },
+#         {
+#             "type": "color",
+#             "value": "Pink"
+#         }
+#     ],
+#     "inventory": {
+#         "quantity": 17,
+#         "inStock": true
+#     }
+# }
+
+# PUT http://localhost:3000/api/products/67f4e9942c9b08918570130b HTTP/1.1
+# content-type: application/json
+
+# {     
+#     "name": "Fortune Brush" ,
+#     "description": "Electronic Toothbrush",
+#     "price": 14.99,
+#     "category": "House Hold Items",
+#     "tags": [
+#         "cleaning", "hygiene", "dental"
+#     ],
+#     "variants": [
+#         {
+#             "type": "color",
+#             "value": "Yellow"
+#         },
+#         {
+#             "type": "color",
+#             "value": "Pink"
+#         }
+#     ],
+#     "inventory": {
+#         "quantity": 17,
+#         "inStock": true
+#     }
+# }
+
+# DELETE   http://localhost:3000/api/products/67f4ecd92658c85fcbe25c54 HTTP/1.1
+
+
+
+# GET  http://localhost:3000/api/orders?email=first@gmail.com 
+
+# GET  http://localhost:3000/api/orders
+
+
+# POST http://localhost:3000/api/orders HTTP/1.1
+# content-type: application/json
+
+# {     
+#     "email": "second@gmail.com" ,
+#     "productId": "67f4f35577a2c966d939012f",
+#     "quantity": 2,
+#     "price": 4.99    
+# }
+
+
+# GET  http://localhost:3000/api/users
+
+POST   http://localhost:3000/api/users?email=admin@gmail.com 
+
+POST http://localhost:3000/api/users/create-account HTTP/1.1
+content-type: application/json
+
+{     
+    "email": "admin@gmail.com" ,
+    "password": "AdminsAccepted",
+    "role": "admin"
+}
