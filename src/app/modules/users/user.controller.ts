@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import jwt from 'jsonwebtoken'
 import config from "../../config";
 import { userServices } from "./user.services";
+import { TUser } from "./user.interface";
 
 const JWT_SECRET = config.jwt_secret as string
 
